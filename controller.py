@@ -1,8 +1,7 @@
 import pandas as pd
 import service
-import dash_html_components as html
-import dash_bootstrap_components as dbc
-import dash_core_components as dcc
+import view
+
 
 df = pd.DataFrame.from_dict(service.get_all_cars(5), orient='columns')
 
@@ -39,15 +38,9 @@ def update_table(selected_brand, selected_model, selected_year):
     else:
         return df.loc[df["year"] == selected_year].to_dict('records')
 
+
 def generate_single_select(label, option_array, dropdown_id):
     option_object = []
     for field in option_array:
         option_object += [{'label': field, 'value': field}]
-    return html.Div(children=[
-        html.Label(label),
-        dcc.Dropdown(
-            id=dropdown_id,
-            options=option_object,
-            value=None
-        ),
-    ])
+    return view.dropdown(label, dropdown_id, option_object)
