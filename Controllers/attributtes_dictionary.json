@@ -1,0 +1,113 @@
+{
+  "name": "Nome",
+  "brand": "Marca",
+  "model": "Modelo",
+  "year": "Ano",
+  "price": "Preço",
+  "fuel": "Combustível",
+  "IPVA": "IPVA",
+  "insurance": "Seguro",
+  "checkUpPrice": "Revisões",
+  "origin": "Procedência",
+  "guarantee": "Garantia",
+  "configuration": "Configuração",
+  "bodySize": "Porte",
+  "capacity": "Lugares",
+  "doors": "Portas",
+  "generation": "Geração",
+  "platform": "Plataforma",
+  "indexCNW": "Índice CNW",
+  "rankingCNW": "Ranking CNW",
+
+  "engine": {
+    "installation": "Instalação",
+    "aspiration":"Aspiração",
+    "layout": "Disposição",
+    "powerSupply": "Alimentação",
+    "cylinders": "Cilindros",
+    "valveControl": "Comando de Válvulas",
+    "valvesPerCylinder": "Válvulas por Cilindro",
+    "cylinderDiameter": "Diâmetro do Cilindro",
+    "compressionRatio": "Razão de Compressão",
+    "pistonStroke": "Curso dos Pistões  ",
+    "cubicCapacity": "Cilindrada",
+    "maxPower": "Potência Máxima",
+    "motorCode": "Código do Motor",
+    "maxTorque": "Torque Máximo",
+    "weightPower": "Peso/Potência",
+    "specificTorque": "Torque Específico",
+    "weightTorque": "Peso/Torque",
+    "specificPower": "Potência Específica"
+  },
+  "transmission": {
+    "traction": "Tração",
+    "gear": "Câmbio",
+    "gearCode": "Código de Câmbio",
+    "coupling": "Acoplamento"
+    },
+
+  "suspension": {
+    "front": "Suspensão dianteira",
+    "frontElasticElement": "Elemento Elástico Dianteiro",
+    "back": "Suspensão Traseira",
+    "backElasticElement": "Elemento Elástico Traseiro"
+    },
+
+  "brakes": {
+    "front": "Freios Dianteiros",
+    "back": "Freios Traseiros"
+    },
+
+  "steering": {
+    "assistance":"Assistência",
+    "minRotateDiameter": "Diâmetro Mínimo de Giro"
+    },
+
+  "tires": {
+    "front": "Pneus Dianteiros",
+    "frontSidewallHeight": "Altura do flanco dianteiro",
+    "back": "Pneus Traseiros",
+    "backSidewallHeight": "Altura do flanco traseiro"
+    },
+
+  "dimensions": {
+    "lenght": "Comprimento",
+    "width": "Largura",
+    "axesDistance": "Distância Entre os Eixos",
+    "height": "Altura",
+    "frontGauge": "Bitola Dianteira",
+    "backGauge": "Bitola Traseira",
+    "trunkVolume": "Porta-malas",
+    "fuelTank": "Tanque de Combustível",
+    "weight": "Peso",
+    "payload": "Carga Útil",
+    "freeSpanGround": "Vão Livre de Solo"
+    },
+
+  "aerodynamics": {
+    "frontArea": "Área Frontal(A)",
+    "dragCoefficient": "Coeficiente de Arrasto(cx)",
+    "frontAreaCorrected": "Área Frontal Corrigida"
+    },
+
+  "performance": {
+    "maxSpeed": "Velocidade Máxima",
+    "acceleration-0-100-km/h": "Aceleração 0-100km/h"
+    },
+
+  "fuelUse": {
+    "urban": "Consumo Urbano",
+    "road": "Consumo Rodoviário"
+  },
+
+  "drivingRange": {
+    "urban": "Autonomia Urbana",
+    "road": "Autonomia Rodoviária"
+  },
+
+  "source": {
+    "url": "url",
+    "carId": "carId",
+    "domain": "Domínio"
+  }
+}

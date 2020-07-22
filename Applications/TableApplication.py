@@ -1,7 +1,4 @@
-import dash_html_components as html
-import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
-import controller
 from Views import TableView
 from app import app
 from Controllers import TableController

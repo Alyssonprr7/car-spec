@@ -3,10 +3,8 @@ from dash.dependencies import Input, Output
 from app import app
 from Applications import TableApplication, AttributesApplication
 
-import controller
 from Controllers import IndexController
 
-import view
 from Views import IndexView
 
 app.layout = IndexView.layout

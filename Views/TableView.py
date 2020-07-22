@@ -1,7 +1,6 @@
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
-import controller
 import dash_table
 from Controllers import TableController
 from Components import Navbar
@@ -63,6 +62,7 @@ def render_table(data):
                         'backgroundColor': 'rgb(248, 248, 248)'
                     }
                 ],
+                style_as_list_view=True,
             )
         ],
         className="mt-4"

@@ -1,34 +1,45 @@
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
-from Controllers import IndexController
+from Controllers import AttributesController
 import dash_table
 from Components import Navbar
 
-import view
-
 
 def render_new_layout(data):
+    keys = AttributesController.translate_to_portuguese(data[0])
+    values = AttributesController.get_values(data[0])
     return html.Div([
         Navbar.navbar,
         dbc.Container(
             className="mt-4",
             children=[
                 html.H3('Attributes'),
-                dash_table.DataTable(
-                    data=data,
-                    columns=[{'id': c, 'name': c} for c in IndexController.df.columns],
-                    page_size=10,
-                )
+                dbc.Row([
+                    dbc.ListGroup(
+                        [
+                            dbc.ListGroupItem(key, style={"fontWeight": "bold"}) for key in keys
+                        ]
+                    ),
+                    dbc.ListGroup(
+                        [
+                            dbc.ListGroupItem(value, style={"fontWeight": "thin"}) for value in values
+
+                        ]
+                    ),
+                ], justify="center"),
+
             ]),
         dbc.Container(children=[
-            dcc.Link('Voltar para Tabela', href='/apps/app1'),
+            dcc.Link('Voltar para Tabela', href='/table'),
         ], className="mt-4"),
-    ])
+
+    ]),
+
 
 layout = html.Div(children=[
     Navbar.navbar,
     dbc.Container(children=[
-        dcc.Link('Ir para Tabela', href='/apps/app1'),
+        dcc.Link('Ir para Tabela', href='/table'),
     ], className="mt-4"),
 ])

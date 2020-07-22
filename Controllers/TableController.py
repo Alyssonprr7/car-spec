@@ -1,8 +1,6 @@
 import pandas as pd
 from Service import Service
 from Views import TableView
-import dash_core_components as dcc
-from dash import no_update
 
 df = pd.DataFrame.from_dict(Service.get_all_cars(5), orient='columns')
 
@@ -34,10 +32,11 @@ def update_table(selected_brand, selected_model, selected_year):
         return df.loc[df["brand"] == selected_brand].to_dict('records')
 
     elif selected_year is None:
-        return df.loc[df["model"] == selected_model].to_dict('records')
+        return df.loc[(df["model"] == selected_model) & (df["brand"] == selected_brand)].to_dict('records')
 
     else:
-        return df.loc[df["year"] == selected_year].to_dict('records')
+        return df.loc[(df["year"] == selected_year) & (df["model"] == selected_model) &
+                      (df["brand"] == selected_brand)].to_dict('records')
 
 
 def generate_single_select(label, option_array, dropdown_id):
