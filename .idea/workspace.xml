@@ -3,21 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="2dd7c582-932e-4ab5-8777-b8af6ef01cc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/AttributesApplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/AttributesApplication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/TableApplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/TableApplication.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/AttributesController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AttributesController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/IndexController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/IndexController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/TableController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TableController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/AttributesView.py" beforeDir="false" afterPath="$PROJECT_DIR$/Views/AttributesView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/TableView.py" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TableView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="car-spec" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api-car-spec/app.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,10 +60,14 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="414" y="116" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.735@0.0.1366.735" timestamp="1595247841825" />
-    <state x="732" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1595379012073">
+    <state x="466" y="127" width="430" height="481" key="FileChooserDialogImpl" timestamp="1595445913659">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="732" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.735@0.0.1366.735" timestamp="1595379012073" />
+    <state x="466" y="127" width="430" height="481" key="FileChooserDialogImpl/0.0.1366.735@0.0.1366.735" timestamp="1595445913659" />
+    <state x="732" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1595458324644">
+      <screen x="0" y="0" width="1366" height="735" />
+    </state>
+    <state x="732" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.735@0.0.1366.735" timestamp="1595458324644" />
     <state x="336" y="0" width="689" height="732" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595382345265">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
@@ -76,9 +76,9 @@
       <screen x="0" y="0" width="1366" height="735" />
     </state>
     <state x="685" y="161" key="run.anything.popup/0.0.1366.735@0.0.1366.735" timestamp="1595158004552" />
-    <state x="346" y="56" width="672" height="678" key="search.everywhere.popup" timestamp="1595334418596">
+    <state x="346" y="56" width="672" height="678" key="search.everywhere.popup" timestamp="1595464544451">
       <screen x="0" y="0" width="1366" height="735" />
     </state>
-    <state x="346" y="56" width="672" height="678" key="search.everywhere.popup/0.0.1366.735@0.0.1366.735" timestamp="1595334418596" />
+    <state x="346" y="56" width="672" height="678" key="search.everywhere.popup/0.0.1366.735@0.0.1366.735" timestamp="1595464544451" />
   </component>
 </project>

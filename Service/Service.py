@@ -2,10 +2,10 @@ import requests
 
 
 def get_all_cars(max_rows):
-    fetch_data = requests.get('https://5f0785109c5c2500163070bb.mockapi.io/cars')
+    fetch_data = requests.get('http://localhost:5000/cars', verify=False)
     return fetch_data.json()
 
 
 def get_unique_car(id):
-    fetch_data = requests.get('https://5f0785109c5c2500163070bb.mockapi.io/cars/{}'.format(id))
+    fetch_data = requests.get('http://localhost:5000/cars/{}'.format(id), verify=False)
     return fetch_data.json()
