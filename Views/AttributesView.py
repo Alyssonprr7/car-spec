@@ -2,7 +2,6 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 from Controllers import AttributesController
-import dash_table
 from Components import Navbar
 
 
@@ -23,7 +22,7 @@ def render_new_layout(data):
                     ),
                     dbc.ListGroup(
                         [
-                            dbc.ListGroupItem(value, style={"fontWeight": "thin"}) for value in values
+                            dbc.ListGroupItem(value) for value in values
 
                         ]
                     ),

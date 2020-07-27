@@ -6,24 +6,6 @@ from Controllers import TableController
 from Components import Navbar
 
 
-def all_selects(brands_series):
-    return html.Div(
-        className="mt-4",
-        children=[
-            dbc.Row(
-                [
-                    dbc.Col(TableController.generate_single_select("Fabricante", brands_series, "brand_dropdown"),
-                            md=2),
-                    dbc.Col(TableController.generate_single_select("Modelo", [], "model_dropdown"), md=2),
-                    dbc.Col(TableController.generate_single_select("Ano", [], "year_dropdown"), md=2),
-
-                ],
-                justify="center"
-            )
-        ]
-    )
-
-
 def dropdown(label, dropdown_id, option_object):
     return html.Div(children=[
         html.Label(label),
@@ -33,6 +15,24 @@ def dropdown(label, dropdown_id, option_object):
             value=None
         ),
     ])
+
+
+def all_selects(brands_series):
+    return html.Div(
+        className="mt-4",
+        children=[
+            dbc.Row(
+                [
+                    dbc.Col(TableController.generate_single_select("Fabricante", brands_series, "brand_dropdown"),
+                            md=2),
+                    dbc.Col(TableController.generate_single_select("Modelo", [], "model_dropdown"), md=5),
+                    dbc.Col(TableController.generate_single_select("Ano", [], "year_dropdown"), md=2),
+
+                ],
+                justify="center"
+            )
+        ]
+    )
 
 
 def render_table(data):

@@ -10,9 +10,7 @@ df = pd.DataFrame.from_dict(Service.get_all_cars(5), orient='columns')
 def render_new_layout(active_cell, application):
 
     if active_cell is not None:
-        print(active_cell["row_id"])
         car_data = [Service.get_unique_car(active_cell["row_id"])]
-
         redirect = dcc.Location(pathname="/attributes", id="new-layout-page")
         df = pd.DataFrame.from_dict(car_data, orient="columns")
         application.layout = application.new_layout(df.to_dict('records'))

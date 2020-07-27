@@ -14,15 +14,6 @@ app.layout = IndexView.layout
               [Input('native-table', 'active_cell')])
 def get_active_letter(active_cell):
     return IndexController.render_new_layout(active_cell, AttributesApplication)
-    #if active_cell is not None:
-    #    car_data = [service.get_unique_car(active_cell["row_id"])]
-    #    redirect = dcc.Location(pathname="/apps/app2", id="new-layout-page")
-    #    df = pd.DataFrame.from_dict(car_data, orient="columns")
-    #    app2.layout = app2.new_layout(df.to_dict('records'))
-    #    return redirect
-
-    #else:
-    #    return no_update
 
 
 @app.callback(Output('page-test', 'children'),
